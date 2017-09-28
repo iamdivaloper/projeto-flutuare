@@ -1,0 +1,188 @@
+/* Geral*/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+section{
+    padding: 30px 0; 
+}
+
+/* Fontes */
+
+h1, h2{
+    font-family: 'Raleway', Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+li{
+    font-family: 'Raleway', Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+p, span{
+        font-family: 'Roboto', Helvetica, sans-serif;
+        text-align: center;
+}
+
+/* Navegação - navbar */
+.navbar{
+    position: fixed;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0px 2px 3px rgba(125, 125, 125,.5);
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.navbar-logo{
+    max-width: 140px;
+    float: left;
+}
+
+.navbar-logo img{
+    width: 100%;
+}
+
+ul{
+    float: right;
+    list-style: none;
+}
+
+ul li{
+    float: left;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+li > a{
+    color: #333;
+}
+
+/*Header - Banner principal */
+header{
+    padding-top: 100px;
+    padding-bottom: 20px;
+    background: url(../img/banner.jpg);
+    background-size: cover;
+    color: white;
+    text-align: center; 
+}
+
+.destaque{
+    color: darkorange;
+}
+
+/* section Como Funciona */
+.itens{
+    display: flex;
+    justify-content: space-around;
+}
+
+.itens > div{
+    max-width: 200px;
+    position: relative;
+}
+
+.itens > div > img{
+    width: 100%;
+}
+
+.destaque-estrela{
+    position: absolute;
+    max-width: 50px;
+    top: 0;
+    right: 0;
+}
+
+/* section CTA*/
+.cta{
+    background: url(../img/cta.png);
+    background-size: cover;
+    color: white;
+}
+
+.cta-conteudo{
+    border: 1px solid white;
+    padding: 20px;
+}
+
+.cta-form{
+    text-align: center;
+}
+
+.cta-form input[type="email"]{
+    width: 50%;
+    height: 30px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+}
+
+.cta-form input[type="submit"]{
+    background-color: #c1392b;
+    border: 0;
+    padding: 10px 25px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: 'Raleway', Helvetica, sans-serif;
+}
+
+@media screen and (max-width:768px){
+    .container{
+        width: 100%;
+    }
+
+    .navbar-menu{
+        display: none;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    header{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .itens{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+
+    .cta-form input[type="email"]{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    
+    .cta-form input[type="submit"]{
+        width: 50%;
+    }
+
+    .cta{
+        margin-bottom: 30px;
+    }
+}
+
